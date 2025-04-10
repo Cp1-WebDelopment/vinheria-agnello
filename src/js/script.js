@@ -46,6 +46,13 @@ if (quantidadeVinho != null & quantidadeVinho > 0) {
 if (nomeDoVinho != "" & tipoDoVinho != "" & safraDoVinho != "" & quantidadeVinho != "") {
     alert("Cadastro realizado! Veja os detalhes no console")
 
+// Exibindo detalhes básicos no console
+    console.log("=== DADOS BÁSICOS DO VINHO ===")
+    console.log(`Nome: ${nomeDoVinho}`)
+    console.log(`Tipo: ${tipoDoVinho}`)
+    console.log(`Safra: ${safraDoVinho}`)
+    console.log(`Quantidade: ${quantidadeVinho}`)
+    console.log("=============================")
 // samuel, inserir aqui dentro do bloco de comando os detalhes do vinho no console.
     //ex: nome vinho:
     //    tipo vinho:
@@ -62,10 +69,14 @@ var estoque = ""
 if (quantidadeVinho < 5) {
     estoque = "estoque baixo"
     alert("a seguir veja o estado do estoque no console")
+// Exibindo o console de "ESTOQUE BAIXO"
+   
     //exibir no console ESTOQUE BAIXO
 } else {
     estoque = "estoque normal"
     alert("a seguir veja o estado do estoque no console")
+// Exibindo no console "ESTOQUE NORMAL"
+
     //exibir no console ESTOQUE NORMAL
 }
 
@@ -73,14 +84,20 @@ var idadeVinho = ""
 if (safraDoVinho >= 2020) {
     idadeVinho = "Vinho Jovem"
     alert("Classificação da safra inserida no console")
+    // Exibindo a classificação da safra no console
+    
 }
 else if (safraDoVinho >= 2015 & safraDoVinho <= 2019) {
     idadeVinho = "Vinho Amadurecido"
     alert("Classificação da safra inserida no console")
+    // Exibindo a classificação da safra no console
+    
 }
 else {
     idadeVinho = "Vinho Antigo"
     alert("Classificação da safra inserida no console")
+    // Exibindo a classificação da safra no console
+    
 }
 
 
