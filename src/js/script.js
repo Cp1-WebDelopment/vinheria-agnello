@@ -1,13 +1,7 @@
 
-// 5. Informações obrigatórias a serem coletadas:
-//    - Nome do vinho  
-//    - Tipo (Tinto, Branco, Rosé)  
-//    - Safra (ano)  
-//    - Qu"antidade em estoque
-// 1. **As informações devem ser solicitadas ao usuário usando `prompt()`**
+// solicitando nome do vinho
 var nomeDoVinho = prompt("qual é o nome do vinho?")
-// 2. **Valide se o usuário realmente digitou algum valor** em cada `prompt()`
-//    - Se o campo estiver vazio ou cancelado, solicite novamente a entrada
+// validando o nome inserido, caso não tenha sido inserido, vai ter o prompt denovo
 if (nomeDoVinho == "") {
     alert("nome do vinho não inserido")
     nomeDoVinho = prompt("qual é o nome do vinho?")
@@ -16,10 +10,9 @@ if (nomeDoVinho != "") {
     alert(`nome do vinho inserido -> ${nomeDoVinho}`)
 }
 
-// 1. **As informações devem ser solicitadas ao usuário usando `prompt()`**
+// solicitando o tipo do vinho
 var tipoDoVinho = prompt("qual seria o tipo do vinho?")
-// 2. **Valide se o usuário realmente digitou algum valor** em cada `prompt()`
-//    - Se o campo estiver vazio ou cancelado, solicite novamente a entrada
+// validando o tipo inserido, caso não tenha sido inserido, vai ter o prompt denovo
 if (tipoDoVinho == "") {
     alert("tipo do vinho não inserido")
     tipoDoVinho = prompt("qual seria o tipo do vinho")
@@ -27,43 +20,44 @@ if (tipoDoVinho == "") {
 if (tipoDoVinho != "") {
     alert(`tipo do vinho inserido -> ${tipoDoVinho}`)
 }
-// 1. **As informações devem ser solicitadas ao usuário usando `prompt()`**
-var safraDoVinho = prompt("de que safra é o vinho?")
-// 2. **Valide se o usuário realmente digitou algum valor** em cada `prompt()`
-//    - Se o campo estiver vazio ou cancelado, solicite novamente a entrada
-if (safraDoVinho == "") {
-    alert("safra do vinho não inserida")
-    safraDoVinho = prompt("de que safra é o vinho?")
+// solicitando o ano da safra do vinho
+var safraDoVinho = parseInt(prompt("de que ano é a safra é do vinho?"))
+// validando o ano inserido, caso não tenha sido inserido, vai ter o prompt denovo
+if (safraDoVinho <= 0 || safraDoVinho == null) {
+    alert("safra do vinho inválida ou não inserida")
+    safraDoVinho = prompt("de que ano é a safra é do vinho?")
 }
-if (safraDoVinho != "") {
+if (safraDoVinho != null & quantidadeVinho > 0) {
     alert(`safra inserida -> ${safraDoVinho}`)
 }
-// 1. **As informações devem ser solicitadas ao usuário usando `prompt()`**
-var quantidadeVinho = prompt("quanto desse vinho tem disponivel no estoque?")
-// 2. **Valide se o usuário realmente digitou algum valor** em cada `prompt()`
-//    - Se o campo estiver vazio ou cancelado, solicite novamente a entrada
-if (quantidadeVinho == "") {
-    alert("quantidade do vinho não inserida")
+// solicitando a quantidade do vinho disponivel no estoque
+var quantidadeVinho = parseInt(prompt("quanto desse vinho tem disponivel no estoque?"))
+// validando se o usuario inseriu uma quantidade valida, caso não, havera o prompt novament
+if (quantidadeVinho <= 0 || quantidadeVinho == null) {
+    alert("quantidade do vinho não inserida, ou invalida")
     quantidadeVinho = prompt("quanto desse vinho tem disponivel no estoque??")
 }
-if (quantidadeVinho != "") {
+if (quantidadeVinho != null & quantidadeVinho > 0) {
     alert(`estoque do vinho -> ${quantidadeVinho}`)
 }
 
 
-// 3. Após o cadastro, exiba um `alert()` informando:
-//    > `"Cadastro realizado! Veja os detalhes no console."`
+// caso todas as informações tenham sido inseridas e validadas, exibe um alert 
 if (nomeDoVinho != "" & tipoDoVinho != "" & safraDoVinho != "" & quantidadeVinho != "") {
     alert("Cadastro realizado! Veja os detalhes no console")
-    //     4. **Sempre que alguma informação for exibida no console, deve haver um `alert()` antes avisando o usuário**, como por exemplo:  
-    //    > `"A seguir, veja os detalhes do vinho no console."`
-    // samuel, inserir aqui dentro do bloco de comando os detalhes do vinho no console.
+
+// samuel, inserir aqui dentro do bloco de comando os detalhes do vinho no console.
+    //ex: nome vinho:
+    //    tipo vinho:
+    //    safra vinho:
+    //    quantidade vinho:
+// samuel, não precisa ser exatamente do jeito que eu escrevi, só deixei desse jeito para vc ter uma ideia doque 
+//printar no console nesse momento do código
 }
 
 
 
 // "calculo" do estoque
-// 6. Verificação de estoque:
 var estoque = ""
 if (quantidadeVinho < 5) {
     estoque = "estoque baixo"
@@ -76,16 +70,29 @@ if (quantidadeVinho < 5) {
 }
 
 var idadeVinho = ""
-if (safraDoVinho => 2020) {
+if (safraDoVinho >= 2020) {
     idadeVinho = "Vinho Jovem"
+    alert("Classificação da safra inserida no console")
 }
 else if (safraDoVinho >= 2015 & safraDoVinho <= 2019) {
     idadeVinho = "Vinho Amadurecido"
+    alert("Classificação da safra inserida no console")
 }
 else {
     idadeVinho = "Vinho Antigo"
+    alert("Classificação da safra inserida no console")
 }
 
+
+alert("uma síntese do vinho cadastrado foi inserida no console")
+//samuel, fazer um console.log com a seguinte frase
+
+// (`Nome do Vinho:               ${nomeDoVinho}
+//        Tipo do Vinho:               ${tipoDoVinho}
+//        Ano Da Safra:                ${safraDoVinho}
+//        Classificação do Vinho:      ${idadeVinho}
+//        Quantidade em estoque:       ${quantidadeVinho}
+//        Estado Do Estoque:           ${estoque}`)
 
 
 
