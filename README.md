@@ -4,7 +4,7 @@
 
 Sistema básico para cadastro e gerenciamento de vinhos artesanais da Vinícola Agnello, desenvolvido com HTML, CSS e JavaScript. A aplicação permite registrar informações como nome, tipo e safra de cada vinho, oferecendo uma solução prática para organizar e visualizar os rótulos produzidos pela vinícola.
 
-🔗 Acesse o site aqui: [Vinharia Agnello](https://github.com/leoosilvp)
+🔗 Acesse o site aqui: [Vinharia Agnello](https://cp1-webdelopment.github.io/vinheria-agnello/)
 
 <hr>
 

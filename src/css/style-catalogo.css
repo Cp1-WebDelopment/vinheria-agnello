@@ -57,12 +57,11 @@ nav ul li a:hover {
 }
 
 #feed {
-    display: flex;
-    padding: 411.5px;
+    padding: 400.5px;
 }
 
 #feed article h1 {
-    align-items: center;
+    text-align: center;
 }
 
 footer {
