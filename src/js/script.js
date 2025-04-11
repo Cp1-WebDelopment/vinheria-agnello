@@ -72,10 +72,12 @@ if (quantidadeVinho < 5) {
     estoque = "Estoque Baixo"
     alert("a seguir veja o estado do estoque no console")
     //exibir no console ESTOQUE BAIXO
+    console.log(`Estado do Estoque do Vinho: ${estoque}`)
 } else {
     estoque = "Estoque Normal"
     alert("a seguir veja o estado do estoque no console")
     //exibir no console ESTOQUE NORMAL
+    console.log(`Estado do Estoque do Vinho: ${estoque}`)
 }
 
 var idadeVinho = ""
@@ -83,15 +85,18 @@ if (safraDoVinho >= 2020) {
     idadeVinho = "Vinho Jovem"
     alert("Classificação da safra inserida no console")
     // Exibindo a classificação da safra no console
+    console.log(`Classificação do Vinho: ${idadeVinho}`)
 }
 else if (safraDoVinho >= 2015 & safraDoVinho <= 2019) {
     idadeVinho = "Vinho Amadurecido"
     alert("Classificação da safra inserida no console")
     // Exibindo a classificação da safra no console
+    console.log(`Classificação do Vinho: ${idadeVinho}`)
 }
 else {
     idadeVinho = "Vinho Antigo"
     alert("Classificação da safra inserida no console")
+    console.log(`Classificação do Vinho: ${idadeVinho}`)
 }
 
 
@@ -104,8 +109,7 @@ alert("uma síntese do vinho cadastrado foi inserida no console")
 //        Classificação do Vinho:      ${idadeVinho}
 //        Quantidade em estoque:       ${quantidadeVinho}
 //        Estado Do Estoque:           ${estoque}`)
-    console.log(`Estado do Estoque do Vinho: ${estoque}`)
-    console.log(`Classificação do Vinho: ${idadeVinho}`)
+
     console.log("=============================")
     console.log("===== SÍNTESE DOS VINHOS CADASTRADOS =====")
     console.log(`Nome do Vinho: ${nomeDoVinho}`)
