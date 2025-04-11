@@ -30,56 +30,6 @@ if (safraDoVinho <= 0 || safraDoVinho == null) {
 if (safraDoVinho != null & quantidadeVinho > 0) {
     alert(`safra inserida -> ${safraDoVinho}`)
 }
-// solicitando a quantidade do vinho disponivel no estoque
-var quantidadeVinho = parseInt(prompt("quanto desse vinho tem disponivel no estoque?"))
-// validando se o usuario inseriu uma quantidade valida, caso não, havera o prompt novament
-if (quantidadeVinho <= 0 || quantidadeVinho == null) {
-    alert("quantidade do vinho não inserida, ou invalida")
-    quantidadeVinho = prompt("quanto desse vinho tem disponivel no estoque??")
-}
-if (quantidadeVinho != null & quantidadeVinho > 0) {
-    alert(`estoque do vinho -> ${quantidadeVinho}`)
-}
-
-
-// caso todas as informações tenham sido inseridas e validadas, exibe um alert 
-if (nomeDoVinho != "" & tipoDoVinho != "" & safraDoVinho != "" & quantidadeVinho != "") {
-    alert("Cadastro realizado! Veja os detalhes no console")
-
-    console.log("=============================")
-    console.log("===== VINHO CADASTRADO =====")
-    console.log(`Nome do Vinho: ${nomeDoVinho}`)
-    console.log(`Tipo de Vinho: ${tipoDoVinho}`)
-    console.log(`Ano da Safra do Vinho: ${safraDoVinho}`)
-    console.log(`Quantidade de Vinho: ${quantidadeVinho}`)  
-    console.log("=============================")
-
-// Exibindo detalhes básicos no console
-// samuel, inserir aqui dentro do bloco de comando os detalhes do vinho no console.
-    //ex: nome vinho:
-    //    tipo vinho:
-    //    safra vinho:
-    //    quantidade vinho:
-// samuel, não precisa ser exatamente do jeito que eu escrevi, só deixei desse jeito para vc ter uma ideia doque 
-//printar no console nesse momento do código
-}
-
-
-
-// "calculo" do estoque
-var estoque = ""
-if (quantidadeVinho < 5) {
-    estoque = "Estoque Baixo"
-    alert("a seguir veja o estado do estoque no console")
-    //exibir no console ESTOQUE BAIXO
-    console.log(`Estado do Estoque do Vinho: ${estoque}`)
-} else {
-    estoque = "Estoque Normal"
-    alert("a seguir veja o estado do estoque no console")
-    //exibir no console ESTOQUE NORMAL
-    console.log(`Estado do Estoque do Vinho: ${estoque}`)
-}
-
 var idadeVinho = ""
 if (safraDoVinho >= 2020) {
     idadeVinho = "Vinho Jovem"
@@ -98,18 +48,34 @@ else {
     alert("Classificação da safra inserida no console")
     console.log(`Classificação do Vinho: ${idadeVinho}`)
 }
+// solicitando a quantidade do vinho disponivel no estoque
+var quantidadeVinho = parseInt(prompt("quanto desse vinho tem disponivel no estoque?"))
+// validando se o usuario inseriu uma quantidade valida, caso não, havera o prompt novament
+if (quantidadeVinho <= 0 || quantidadeVinho == null) {
+    alert("quantidade do vinho não inserida, ou invalida")
+    quantidadeVinho = prompt("quanto desse vinho tem disponivel no estoque??")
+}
+if (quantidadeVinho != null & quantidadeVinho > 0) {
+    alert(`estoque do vinho -> ${quantidadeVinho}`)
+}
+// "calculo" do estoque
+var estoque = ""
+if (quantidadeVinho < 5) {
+    estoque = "Estoque Baixo"
+    alert("a seguir veja o estado do estoque no console")
+    //exibir no console ESTOQUE BAIXO
+    console.log(`Estado do Estoque do Vinho: ${estoque}`)
+} else {
+    estoque = "Estoque Normal"
+    alert("a seguir veja o estado do estoque no console")
+    //exibir no console ESTOQUE NORMAL
+    console.log(`Estado do Estoque do Vinho: ${estoque}`)
+}
 
-
-alert("uma síntese do vinho cadastrado foi inserida no console")
-//samuel, fazer um console.log com a seguinte frase
-
-// (`Nome do Vinho:               ${nomeDoVinho}
-//        Tipo do Vinho:               ${tipoDoVinho}
-//        Ano Da Safra:                ${safraDoVinho}
-//        Classificação do Vinho:      ${idadeVinho}
-//        Quantidade em estoque:       ${quantidadeVinho}
-//        Estado Do Estoque:           ${estoque}`)
-
+// caso todas as informações tenham sido inseridas e validadas, exibe um alert 
+if (nomeDoVinho != "" & tipoDoVinho != "" & safraDoVinho != "" & quantidadeVinho != "") {
+    alert("Vinho Cadastrado com sucesso, uma sintese do vinho foi inserida no console.")
+}
     console.log("=============================")
     console.log("===== SÍNTESE DOS VINHOS CADASTRADOS =====")
     console.log(`Nome do Vinho: ${nomeDoVinho}`)
