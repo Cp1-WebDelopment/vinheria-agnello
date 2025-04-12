@@ -79,7 +79,7 @@ if (quantidadeVinho < 5) {
 // caso todas as informações tenham sido inseridas e validadas, exibe um alert 
 if (nomeDoVinho != "" & tipoDoVinho != "" & safraDoVinho != "" & quantidadeVinho != "") {
     alert("Vinho Cadastrado com sucesso, uma sintese do vinho foi inserida no console.")
-}
+    
     console.log("=============================")
     console.log("===== SÍNTESE DO VINHO CADASTRADOS =====")
     console.log(`Nome do Vinho: ${nomeDoVinho}`)
@@ -88,7 +88,7 @@ if (nomeDoVinho != "" & tipoDoVinho != "" & safraDoVinho != "" & quantidadeVinho
     console.log(`Quantidade de Vinho: ${quantidadeVinho}`)  
     console.log(`Estado do Estoque do Vinho: ${estoque}`)
     console.log(`Classificação do Vinho: ${idadeVinho}`)
-
+}
 
 
 
