@@ -7,7 +7,8 @@ if (nomeDoVinho == "") {
     nomeDoVinho = prompt("qual é o nome do vinho?")
 }
 if (nomeDoVinho != "") {
-    alert(`nome do vinho inserido -> ${nomeDoVinho}`)
+    alert(`nome do vinho inserido -> ${nomeDoVinho}, foi registrado no console.`)
+    console.log(`Nome do vinho: ${nomeDoVinho}`)
 }
 
 // solicitando o tipo do vinho
@@ -18,7 +19,8 @@ if (tipoDoVinho == "") {
     tipoDoVinho = prompt("qual seria o tipo do vinho")
 }
 if (tipoDoVinho != "") {
-    alert(`tipo do vinho inserido -> ${tipoDoVinho}`)
+    alert(`tipo do vinho inserido -> ${tipoDoVinho}, foi registrado no console.`)
+    console.log(`Tipo do vinho: ${tipoDoVinho}`)
 }
 // solicitando o ano da safra do vinho
 var safraDoVinho = parseInt(prompt("de que ano é a safra é do vinho?"))
@@ -27,8 +29,9 @@ if (safraDoVinho <= 0 || safraDoVinho == null) {
     alert("safra do vinho inválida ou não inserida")
     safraDoVinho = prompt("de que ano é a safra do vinho?")
 }
-if (safraDoVinho != null & quantidadeVinho > 0) {
-    alert(`safra inserida -> ${safraDoVinho}`)
+if (safraDoVinho != null & safraDoVinho > 0) {
+    alert(`safra inserida -> ${safraDoVinho}, foi registrada no console.`)
+    console.log(`Safra: ${safraDoVinho}`)
 }
 var idadeVinho = ""
 if (safraDoVinho >= 2020) {
@@ -56,7 +59,8 @@ if (quantidadeVinho <= 0 || quantidadeVinho == null) {
     quantidadeVinho = prompt("quanto desse vinho tem disponivel no estoque??")
 }
 if (quantidadeVinho != null & quantidadeVinho > 0) {
-    alert(`estoque do vinho -> ${quantidadeVinho}`)
+    alert(`estoque do vinho -> ${quantidadeVinho}, foi registrado no console.`)
+    console.log(`Quantidade: ${quantidadeVinho}`)
 }
 // "calculo" do estoque
 var estoque = ""
@@ -77,7 +81,7 @@ if (nomeDoVinho != "" & tipoDoVinho != "" & safraDoVinho != "" & quantidadeVinho
     alert("Vinho Cadastrado com sucesso, uma sintese do vinho foi inserida no console.")
 }
     console.log("=============================")
-    console.log("===== SÍNTESE DOS VINHOS CADASTRADOS =====")
+    console.log("===== SÍNTESE DO VINHO CADASTRADOS =====")
     console.log(`Nome do Vinho: ${nomeDoVinho}`)
     console.log(`Tipo de Vinho: ${tipoDoVinho}`)
     console.log(`Ano da Safra do Vinho: ${safraDoVinho}`)
